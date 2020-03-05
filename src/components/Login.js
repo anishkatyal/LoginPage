@@ -7,12 +7,13 @@ class Login extends Component {
 			userid: "",
 			password: "",
 			userError: "",
-			passError: ""
+			passError: "",
+			disable: true
 		}
 		this.state = this.default
 		this.userString = {
             id: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
-            pass: /^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{4,})/
+            pass: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$&]).{4,8}$/
 
 		}
 	}
@@ -20,13 +21,26 @@ class Login extends Component {
 	handleIdChange = (event) => {
 		this.setState({
 			userid: event.target.value
+		}, () => {
+			if (!this.valid(this.state.userid, this.userString.id)){
+				this.setState({userError:"Invalid Email"})
+			} else {
+				this.setState({userError:""})
+			}
 		})
+	
 	}
 
 	handlePassChange = (event) => {
 		this.setState({
 			password: event.target.value
 		})
+		
+		if(!this.valid(this.state.password, this.userString.pass)){
+            this.setState({passError:"Invalid Password"})
+        } else {
+			this.setState({passError:"", disable: false})
+		}
 	}
 
 	valid(field, regex) {
@@ -34,31 +48,9 @@ class Login extends Component {
         return regex.test(field)
     }
   
-
-	validate = () => {
-		if (!this.valid(this.state.userid, this.userString.id) && !this.valid(this.state.password, this.userString.pass)){
-			this.setState(
-				{userError:"Invalid UserId", passError:"Invalid Password"})
-
-        }
-         else if (!this.valid(this.state.userid, this.userString.id)){
-            this.setState({userError:"Invalid Email"})
-
-        }
-        else if(!this.valid(this.state.password, this.userString.pass)){
-            this.setState({passError:"Invalid Password"})
-
-        }
-        else{
-            return true;
-        }
-	}
-	handleSubmit = () => {
-		if (this.validate()) {
-			console.log(this.state)
-			alert("Logged in Successfully")
-			this.setState(this.default)
-		}
+	handleSubmit = (event) => {
+		event.preventDefault();
+		console.log("console.log state", this.state)
 	}
 	render() {
 		return ( 
@@ -84,13 +76,14 @@ class Login extends Component {
 			/> 
 			<span className="error">{this.state.passError}</span>
 
-			<button className = "btn btn-primary btn-block btn-large"
+
+			<button disabled={this.state.disable} className = "btn"
 			type = "submit"
 			onClick = {
-				this.handleSubmit
+			this.handleSubmit
 			}> Sign In </button> 
 			<br/>
-			<button className="btn1 btn1-primary btn1-block btn1-large">Sign Up</button>
+			<button  className="btn1">Sign Up</button>
             
 
 			</div>
