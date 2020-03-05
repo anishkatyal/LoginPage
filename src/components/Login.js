@@ -37,18 +37,16 @@ class Login extends Component {
 
 	validate = () => {
 		if (!this.valid(this.state.userid, this.userString.id) && !this.valid(this.state.password, this.userString.pass)){
-            alert("Invalid ID and Password")
-            this.setState(this.default)
+			this.setState(
+				{userError:"Invalid UserId", passError:"Invalid Password"})
 
         }
          else if (!this.valid(this.state.userid, this.userString.id)){
-            alert("Invalid ID")
-            this.setState(this.default)
+            this.setState({userError:"Invalid Email"})
 
         }
         else if(!this.valid(this.state.password, this.userString.pass)){
-            alert("Invalid Password")
-            this.setState(this.default)
+            this.setState({passError:"Invalid Password"})
 
         }
         else{
@@ -64,10 +62,10 @@ class Login extends Component {
 	}
 	render() {
 		return ( 
-        <div className = "main" >
-			<h1 className="head">Login Page</h1>
-			<div className="main1"><label className = "id"> UserID: </label> 
-			<input type = "text"
+        <div className = "login" >
+			<h1>Login Page</h1>
+		
+			<input type = "text" placeholder="Email" className="main1"
 			value = {
 				this.state.userid
 			}
@@ -75,10 +73,8 @@ class Login extends Component {
 				this.handleIdChange
 			}
 			/> 
-            </div>
-			<div className="main2">
-                <label className = "pass" > Password: </label> 
-			<input type = "password"
+			<span className="error">{this.state.userError}</span>
+			<input type = "password" placeholder="Password" className="main1"
 			value = {
 				this.state.password
 			}
@@ -86,13 +82,15 @@ class Login extends Component {
 				this.handlePassChange
 			}
 			/> 
-            </div>
-			<button className = "button"
+			<span className="error">{this.state.passError}</span>
+
+			<button className = "btn btn-primary btn-block btn-large"
 			type = "submit"
 			onClick = {
 				this.handleSubmit
-			}> Login </button> 
-			<button className="button1">Register</button>
+			}> Sign In </button> 
+			<br/>
+			<button className="btn1 btn1-primary btn1-block btn1-large">Sign Up</button>
             
 
 			</div>
