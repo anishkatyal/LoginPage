@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import './Login.css';
+import ReactDOM from 'react-dom';
+
+import {Link} from 'react-router-dom';
+
 class Login extends Component {
 	constructor() {
 		super();
@@ -51,6 +55,7 @@ class Login extends Component {
 	handleSubmit = (event) => {
 		event.preventDefault();
 		console.log("console.log state", this.state)
+		this.setState(this.default)
 	}
 	render() {
 		return ( 
@@ -77,14 +82,14 @@ class Login extends Component {
 			<span className="error">{this.state.passError}</span>
 
 
-			<button disabled={this.state.disable} className = "btn"
+			<Link to="/"><button disabled={this.state.disable} className = "btn"
 			type = "submit"
 			onClick = {
 			this.handleSubmit
-			}> Sign In </button> 
-			<br/>
-			<button  className="btn1">Sign Up</button>
-            
+			}> Sign In </button>
+			</Link><br/>
+			<Link to="/register"><button  className="btn1">Sign Up</button>
+            </Link>
 
 			</div>
           
