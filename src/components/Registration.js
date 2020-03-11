@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {Redirect} from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 var currDate = new Date();
 class Registration extends Component {
@@ -19,7 +19,7 @@ class Registration extends Component {
             ageError: "",
             passError:"",
             genError:"",
-            disable: true
+            direct: false,
         }
        
         this.state = this.default
@@ -80,25 +80,24 @@ class Registration extends Component {
             }
         
     }
-    handleGender = (event) => {
-        this.setState({gender: event.currentTarget.value}
-        , () => {
-            if(this.gender == false) {
-                this.setState({genError:"Please select your gender"})
-            }
-            else{
-                this.setState({genError:""})
-            }
-        })
-    }
+    // handleGender = (event) => {
+    //     this.setState({gender: event.currentTarget.value}
+    //     , () => {
+    //         if(this.gender == false) {
+    //             this.setState({genError:"Please select your gender"})
+    //         }
+    //         else{
+    //             this.setState({genError:""})
+    //         }
+    //     })
+    // }
     handlePassword = (event) => {
         this.setState({pass: event.target.value}
         , () => {
             if (!this.valid(this.state.pass, this.pattern.pass)){
                 this.setState({passError:"Invalid Password"})
             } else {
-                this.setState({passError:"", disable: false})
-                return <Redirect to="/login" />
+                this.setState({passError:"" })
             }
         })
     }
@@ -106,19 +105,32 @@ class Registration extends Component {
         console.log("userEmail",regex.test(field))
         return regex.test(field)
     }
-  
+     
+      
 	handleSubmit = (event) => {
-        let key = this.state.userEmail;
         event.preventDefault();
-        console.log("console.log state", this.state)
-        // localStorage.clear();
-        localStorage.setItem(key, JSON.stringify(this.state))
-        console.log(localStorage)
-        this.setState(this.default)
+        if(this.state.firstName === "" || this.state.lastName === "" || this.state.userEmail=== "" || this.state.age==="" || this.state.pass === ""){
+            alert("Please enter all the fields")
+        }
+        else{
+
+            console.log("console.log state", this.state)
+
+            let key = this.state.userEmail;
+            // localStorage.clear();
+            localStorage.setItem(key, JSON.stringify(this.state))
+            console.log(localStorage)
+            this.setState({direct:true})
+        }
+           
+        
         
 
 	}
     render(){
+        if(this.state.direct===true){
+         return   <Redirect to="/login" />
+        }
         
 
         
@@ -135,11 +147,11 @@ class Registration extends Component {
             <span className="error">{this.state.emailError}</span>
             <input className="main1" type="password" placeholder="Password" value={this.state.pass} onChange={this.handlePassword} />
             <span className="error">{this.state.passError}</span>
-            <input className="main1" placeholder="Your Gender" /> <input value="Male" checked={this.state.gender ==="Male"} onChange={this.handleGender} type="radio" name="gender" /> Male
-            <input value="Female" onChange={this.handleGender} checked={this.state.gender ==="Female"} type="radio" name="gender" /> Female
-            <input value="Other" onChange={this.handleGender} checked={this.state.gender ==="Other"} type="radio" name="gender" /> Other
-            <span className="error">{this.state.genError}</span>
-            <button  disabled={this.state.disable} className="btn" type="submit" onClick={this.handleSubmit}>Register</button>
+            {/* <div class="main1">Gender: <input value="Male" onChange={this.handleGender} type="radio"  /> Male
+            <input value="Female" onChange={this.handleGender}  type="radio" /> Female
+            <input value="Other" onChange={this.handleGender}  type="radio"  /> Other
+            </div><span className="error">{this.state.genError}</span> */}
+            <button className="btn" type="submit" onClick={this.handleSubmit}>Register</button>
             </div>
             
         )

@@ -1,0 +1,18 @@
+.main{
+text-align: center;
+}
+
+.but{
+    width: auto; 
+	line-height: 18px;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	background-color: #ca2828;
+	cursor: pointer;
+    margin-left:45%;
+}
