@@ -1,0 +1,59 @@
+.foot{
+    background-color: #172337;
+    width: 100%;
+    height:400px;
+    margin-top: 30%;
+
+}
+
+.foot1{
+    margin-left: 5%;
+
+}
+.foot1 p{
+    
+    color: grey;
+    font-weight: bold;
+
+}
+
+.foot1 a{
+    color: white;
+    line-height: 2;
+    text-decoration: none;
+    font-weight: bold;
+}
+.foot2{
+    margin-left: 25%;
+    margin-top: -14.5%;
+    position: relative;
+
+}
+.foot2 p{
+    color: grey;
+    font-weight: bold;
+}
+
+.foot2 a{
+    color: white;
+    line-height: 2;
+    text-decoration: none;
+    font-weight: bold;
+}
+.foot3{
+    margin-left: 45%;
+    margin-top: -14.5%;
+    position: relative;
+
+}
+.foot3 p{
+    color: grey;
+    font-weight: bold;
+}
+
+.foot3 a{
+    color: white;
+    line-height: 2;
+    text-decoration: none;
+    font-weight: bold;
+}

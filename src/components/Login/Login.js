@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Login.css';
+import '../Login/Login.css';
 import ReactDOM from 'react-dom';
 
 import {Redirect, Link} from 'react-router-dom';
@@ -93,6 +93,7 @@ class Login extends Component {
 			return <Redirect to="/" />
 		}
 		return ( 
+			
         <div className = "login" >
 			<h1>Login Page</h1>
 		
