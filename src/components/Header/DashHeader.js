@@ -9,7 +9,7 @@ class DashHeader extends Component{
     render(){
         return(
          <header className="head">
-            <div >  
+            <div>  
              <img className="img" src={Logo} alt="website logo" width="60px" height="40px"/>
              <input className="main" type="search" placeholder="search for Items" />
              </div>

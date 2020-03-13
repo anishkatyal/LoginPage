@@ -64,29 +64,36 @@ class Login extends Component {
 			return this.setState({loginError:"Please enter the Username and Password"})
 		}
 		else{
-		for( let i=0;i<localStorage.length;i++){
-			let c = localStorage.key(i)
-			console.log(c)
-			console.log(localStorage.getItem(c),"value")
 			console.log(localStorage)
-			console.log((JSON.parse(localStorage.getItem(c)).pass))
-			if((this.state.userid===c && this.state.password===JSON.parse(localStorage.getItem(c)).pass)){
+
+		for( let i=0;i<localStorage.length;i++){
+			let key = localStorage.key(i)
+			console.log(key)
+			console.log(localStorage.getItem(key),"value")
+			console.log((JSON.parse(localStorage.getItem(key)).pass))
+			if((this.state.userid===key && this.state.password===JSON.parse(localStorage.getItem(key)).pass)){
 					console.log("Success")
-				return	this.setState({direct: true})
+					return this.setState({direct: true})
 
 			}
 			else if(this.state.userid === "admin@cart.com" && this.state.password === "oneofakind"){
 				console.log("Successful Admin Login")
-				return this.setState({direct: true})
+				 return this.setState({direct: true})
 			}
 			else{
-				return this.setState({loginError:"User not found!!! Please register yourself"})			
-			}
+				console.log("unsuccessful") 
+				this.setState({loginError:"User not found!!! Please register yourself"})		
+	
+				
+			this.setState({
+					userid:"", password:""
+			})
+		}
 		}
 	}
-		event.preventDefault();
-		console.log("console.log state", this.state)
-		this.setState(this.default)
+		// event.preventDefault();
+
+		// console.log("console.log state", this.state)
 	}
 	render() {
 		if(this.state.direct=== true){

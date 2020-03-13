@@ -1,11 +1,18 @@
-.items{
- background-color: white;   
- padding: 10px;
- height:20px;
+.body{
+    background-image: none;
+    background-color: white;
 }
-    .items a{
+
+.elec{
+    overflow: scroll;
+    height: 850px;
+    width: auto;
+}
+
+.elec a{
     text-decoration: none;
-    margin: 50px;
-    font-weight: bold;
-    color: black;
+    margin:10px;
 }
+
+.elec a p{
+ }
