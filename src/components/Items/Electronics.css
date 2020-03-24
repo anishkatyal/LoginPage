@@ -9,10 +9,287 @@
     width: auto;
 }
 
-.elec a{
-    text-decoration: none;
-    margin:10px;
+.elec h1{
+    margin-left: 150px;
 }
 
-.elec a p{
+.mob a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.mob p {
+    margin-left:35px;
+
  }
+
+.mob1{
+    margin: 0px;
+}
+
+.mob1 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.mob1 p {
+    margin-left:65px;
+
+ }
+ 
+ .mob2 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+.mob2 p {
+    margin-left:55px;
+
+ }
+ 
+
+ .mob3 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+.mob3 p {
+    margin-left:55px;
+
+ }
+ 
+ .mob4 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+.mob4 p {
+    margin-left:55px;
+
+ }
+ 
+ li{
+     display: inline-flex;
+     margin: 30px;
+ }
+
+ .tv a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.tv p {
+    margin-left:45px;
+
+ }
+
+ .tv1 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.tv1 p {
+    margin-left:45px;
+
+ }
+
+ .tv2 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.tv2 p {
+    margin-left:45px;
+
+ }
+
+ .tv3 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.tv3 p {
+    margin-left:45px;
+
+ }
+
+ .fridge p {
+    margin-left:45px;
+
+ }
+
+ .fridge a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.fridge1 p {
+    margin-left:45px;
+
+ }
+
+ .fridge1 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.fridge2 p {
+    margin-left:45px;
+
+ }
+
+ .fridge2 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.fridge3 p {
+    margin-left:45px;
+
+ }
+
+ .fridge3 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.fridge4 p {
+    margin-left:45px;
+
+ }
+
+ .fridge4 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.machine p {
+    margin-left:45px;
+
+ }
+
+ .machine a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+
+.machine1 p {
+    margin-left:45px;
+
+ }
+
+ .machine1 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+
+.machine2 p {
+    margin-left:45px;
+
+ }
+
+ .machine2 a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+
+.machine3 p {
+    margin-left:45px;
+
+ }
+
+ .machine3  a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
