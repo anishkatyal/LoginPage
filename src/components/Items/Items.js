@@ -8,7 +8,7 @@ class Items extends Component{
         return(
             <div className="items">
            <a href="/electronics">Electronics &#x25BC;</a>
-            <a href="#">Fashion Wear &#x25BC;</a>
+            <a href="/fashion">Fashion Wear &#x25BC;</a>
             <a href="#">Home & Furniture &#x25BC;</a>
             <a href="#">Grocery &#x25BC;</a>
 

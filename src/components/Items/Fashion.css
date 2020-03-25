@@ -1,0 +1,44 @@
+.body{
+    background-image: none;
+    background-color: white;
+}
+
+.fashion{
+    overflow: scroll;
+    height: 850px;
+    width: auto;
+}
+
+.fashion h1{
+    margin-left: 150px;
+}
+
+.men a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.men p {
+    margin-left:35px;
+
+ }
+
+ .women a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.women p {
+    margin-left:35px;
+
+ }

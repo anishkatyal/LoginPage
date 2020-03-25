@@ -154,6 +154,7 @@ render(){
             </li>
            
         </ul>
+        <DashFooter/>
 
     </div>
     )
