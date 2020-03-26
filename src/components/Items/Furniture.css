@@ -1,0 +1,59 @@
+.body{
+    background-image: none;
+    background-color: white;
+}
+
+.furniture{
+    overflow: scroll;
+    height: 850px;
+    width: auto;
+}
+
+.furniture h1{
+    margin-left: 150px;
+}
+
+.sofa a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.sofa p {
+    margin-left:35px;
+
+ }
+
+ .table a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.table p {
+    margin-left:35px;
+
+ }
+
+ .bed a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.bed p {
+    margin-left:35px;
+
+ }

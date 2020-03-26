@@ -7,6 +7,9 @@ import Dashboard from './components/Dashboard'
 import Registration from './components/Registration';
 import Electronics from './components/Items/Electronics';
 import Fashion from './components/Items/Fashion';
+import Furniture from './components//Items/Furniture';
+import Grocery from './components/Items/Grocery';
+
 class App extends Component {
   render(){
   return (
@@ -17,6 +20,10 @@ class App extends Component {
     <Route path="/register" component={Registration} />
     <Route path="/electronics" component = {Electronics} />
     <Route path="/fashion" component = {Fashion} />
+    <Route path="/furniture" component = {Furniture} />
+    <Route path="/grocery" component = {Grocery} />
+
+
 
     </div>
 </Router>

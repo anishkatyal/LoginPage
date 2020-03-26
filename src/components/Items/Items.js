@@ -9,8 +9,8 @@ class Items extends Component{
             <div className="items">
            <a href="/electronics">Electronics &#x25BC;</a>
             <a href="/fashion">Fashion Wear &#x25BC;</a>
-            <a href="#">Home & Furniture &#x25BC;</a>
-            <a href="#">Grocery &#x25BC;</a>
+            <a href="/furniture">Home & Furniture &#x25BC;</a>
+            <a href="/grocery">Grocery &#x25BC;</a>
 
             </div>
             

@@ -1,0 +1,44 @@
+.body{
+    background-image: none;
+    background-color: white;
+}
+
+.grocery{
+    overflow: scroll;
+    height: 850px;
+    width: auto;
+}
+
+.grocery h1{
+    margin-left: 150px;
+}
+
+.house a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.house p {
+    margin-left:35px;
+
+ }
+
+ .snack a {
+    margin:50px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;
+
+}
+
+.snack p {
+    margin-left:35px;
+
+ }
