@@ -1,20 +1,21 @@
 .body{
     background-image: none;
-    background-color: white;
 }
 
 .elec{
     overflow: scroll;
-    height: 850px;
+    height: 650px;
     width: auto;
+    background-color: #F1F3F6;
+
 }
 
 .elec h1{
-    margin-left: 150px;
+    margin-left: 55px;
 }
 
 .mob a {
-    margin:50px;
+    margin:30px;
     color: black;
     display: inline;
     text-decoration: none;
@@ -24,7 +25,7 @@
 }
 
 .mob p {
-    margin-left:35px;
+    margin-left:55px;
 
  }
 

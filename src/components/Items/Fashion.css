@@ -7,10 +7,12 @@
     overflow: scroll;
     height: 850px;
     width: auto;
+    background-color: #F1F3F6;
+
 }
 
 .fashion h1{
-    margin-left: 150px;
+    margin-left: 55px;
 }
 
 .men a {

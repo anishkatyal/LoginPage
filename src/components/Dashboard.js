@@ -8,7 +8,7 @@ import Items from './Items/Items';
 import Sliders from './Slider/Slider';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css'
-
+import Discounts from './Discounts';
 
 class Dashboard extends Component{
     render(){
@@ -17,6 +17,7 @@ class Dashboard extends Component{
             <DashHeader />
             <Items />
             <Sliders />
+            <Discounts />
             <DashFooter />
         </div>
         )

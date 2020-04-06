@@ -1,6 +1,12 @@
 .addcart{
     margin-left: 50px;
-    background-color: cadetblue;
     outline: none;
-    border-color: cadetblue;
 }
+
+.addcart ul li{
+    margin-left:500px;
+    color: black;
+    display: inline;
+    text-decoration: none;
+
+    padding: 0px;}

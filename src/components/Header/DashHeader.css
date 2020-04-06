@@ -1,8 +1,8 @@
 .head{
-    width: 100%;
+    width: 99%;
     background-color: #2874F0;
     height: 80px;
-    position: relative;
+    position: absolute;
 }
 
 .main{
@@ -19,7 +19,7 @@ text-align: start;
 
 .img{
     margin-left: 15%;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 .cart{
     width: 5%; 
